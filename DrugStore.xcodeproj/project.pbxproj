@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE9E9C412B5808AF00C192D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E9C402B5808AF00C192D1 /* AppDelegate.swift */; };
+		CE9E9C432B5808AF00C192D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E9C422B5808AF00C192D1 /* SceneDelegate.swift */; };
+		CE9E9C4A2B5808B100C192D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9E9C492B5808B100C192D1 /* Assets.xcassets */; };
+		CE9E9C4D2B5808B100C192D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9E9C4B2B5808B100C192D1 /* LaunchScreen.storyboard */; };
+		CE9E9C852B5B1C7100C192D1 /* Extansion View.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E9C812B5B1C7100C192D1 /* Extansion View.swift */; };
+		CE9E9C862B5B1C7100C192D1 /* Extansion UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E9C822B5B1C7100C192D1 /* Extansion UIApplication.swift */; };
+		CE9E9C872B5B1C7100C192D1 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E9C832B5B1C7100C192D1 /* Observable.swift */; };
+		CE9E9C882B5B1C7100C192D1 /* Extension Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E9C842B5B1C7100C192D1 /* Extension Colors.swift */; };
+		CE9E9C8A2B5B1C9D00C192D1 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E9C892B5B1C9D00C192D1 /* TabBarViewController.swift */; };
+		CE9E9C8C2B5B1CBD00C192D1 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E9C8B2B5B1CBD00C192D1 /* NetworkService.swift */; };
+		CE9E9C9C2B5B1CE900C192D1 /* CatalogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E9C902B5B1CE900C192D1 /* CatalogViewModel.swift */; };
+		CE9E9C9D2B5B1CE900C192D1 /* DrugModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E9C922B5B1CE900C192D1 /* DrugModel.swift */; };
+		CE9E9C9E2B5B1CE900C192D1 /* CatalogCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E9C952B5B1CE900C192D1 /* CatalogCollectionViewCell.swift */; };
+		CE9E9C9F2B5B1CE900C192D1 /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E9C962B5B1CE900C192D1 /* CatalogViewController.swift */; };
+		CE9E9CA02B5B1CE900C192D1 /* DrugViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E9C992B5B1CE900C192D1 /* DrugViewModel.swift */; };
+		CE9E9CA12B5B1CE900C192D1 /* DrugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E9C9B2B5B1CE900C192D1 /* DrugViewController.swift */; };
+		CE9E9CA42B5B1D0700C192D1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CE9E9CA32B5B1D0700C192D1 /* Kingfisher */; };
+		CE9E9CAC2B5B1D4E00C192D1 /* DateFormatters+Presets.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E9CA62B5B1D4E00C192D1 /* DateFormatters+Presets.swift */; };
+		CE9E9CAD2B5B1D4E00C192D1 /* CellsReusingUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E9CA72B5B1D4E00C192D1 /* CellsReusingUtils.swift */; };
+		CE9E9CAE2B5B1D4E00C192D1 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E9CA92B5B1D4E00C192D1 /* NetworkClient.swift */; };
+		CE9E9CAF2B5B1D4E00C192D1 /* NetworkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E9CAA2B5B1D4E00C192D1 /* NetworkTask.swift */; };
+		CE9E9CB02B5B1D4E00C192D1 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E9CAB2B5B1D4E00C192D1 /* NetworkRequest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CE9E9C3D2B5808AF00C192D1 /* DrugStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrugStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9E9C402B5808AF00C192D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE9E9C422B5808AF00C192D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CE9E9C492B5808B100C192D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE9E9C4C2B5808B100C192D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE9E9C4E2B5808B100C192D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE9E9C812B5B1C7100C192D1 /* Extansion View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extansion View.swift"; sourceTree = "<group>"; };
+		CE9E9C822B5B1C7100C192D1 /* Extansion UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extansion UIApplication.swift"; sourceTree = "<group>"; };
+		CE9E9C832B5B1C7100C192D1 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		CE9E9C842B5B1C7100C192D1 /* Extension Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension Colors.swift"; sourceTree = "<group>"; };
+		CE9E9C892B5B1C9D00C192D1 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		CE9E9C8B2B5B1CBD00C192D1 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		CE9E9C902B5B1CE900C192D1 /* CatalogViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogViewModel.swift; sourceTree = "<group>"; };
+		CE9E9C922B5B1CE900C192D1 /* DrugModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrugModel.swift; sourceTree = "<group>"; };
+		CE9E9C952B5B1CE900C192D1 /* CatalogCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE9E9C962B5B1CE900C192D1 /* CatalogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
+		CE9E9C992B5B1CE900C192D1 /* DrugViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrugViewModel.swift; sourceTree = "<group>"; };
+		CE9E9C9B2B5B1CE900C192D1 /* DrugViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrugViewController.swift; sourceTree = "<group>"; };
+		CE9E9CA62B5B1D4E00C192D1 /* DateFormatters+Presets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormatters+Presets.swift"; sourceTree = "<group>"; };
+		CE9E9CA72B5B1D4E00C192D1 /* CellsReusingUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellsReusingUtils.swift; sourceTree = "<group>"; };
+		CE9E9CA92B5B1D4E00C192D1 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		CE9E9CAA2B5B1D4E00C192D1 /* NetworkTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTask.swift; sourceTree = "<group>"; };
+		CE9E9CAB2B5B1D4E00C192D1 /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE9E9C3A2B5808AF00C192D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9E9CA42B5B1D0700C192D1 /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE9E9C342B5808AF00C192D1 = {
+			isa = PBXGroup;
+			children = (
+				CE9E9C3F2B5808AF00C192D1 /* DrugStore */,
+				CE9E9C3E2B5808AF00C192D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE9E9C3E2B5808AF00C192D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE9E9C3D2B5808AF00C192D1 /* DrugStore.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE9E9C3F2B5808AF00C192D1 /* DrugStore */ = {
+			isa = PBXGroup;
+			children = (
+				CE9E9C8D2B5B1CE900C192D1 /* Scenes */,
+				CE9E9CA52B5B1D4E00C192D1 /* Foundation */,
+				CE9E9C802B5B1C7100C192D1 /* Helpers */,
+				CE9E9C402B5808AF00C192D1 /* AppDelegate.swift */,
+				CE9E9C422B5808AF00C192D1 /* SceneDelegate.swift */,
+				CE9E9C892B5B1C9D00C192D1 /* TabBarViewController.swift */,
+				CE9E9C8B2B5B1CBD00C192D1 /* NetworkService.swift */,
+				CE9E9C492B5808B100C192D1 /* Assets.xcassets */,
+				CE9E9C4B2B5808B100C192D1 /* LaunchScreen.storyboard */,
+				CE9E9C4E2B5808B100C192D1 /* Info.plist */,
+			);
+			path = DrugStore;
+			sourceTree = "<group>";
+		};
+		CE9E9C802B5B1C7100C192D1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CE9E9C812B5B1C7100C192D1 /* Extansion View.swift */,
+				CE9E9C822B5B1C7100C192D1 /* Extansion UIApplication.swift */,
+				CE9E9C832B5B1C7100C192D1 /* Observable.swift */,
+				CE9E9C842B5B1C7100C192D1 /* Extension Colors.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CE9E9C8D2B5B1CE900C192D1 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				CE9E9C8E2B5B1CE900C192D1 /* Catalog */,
+				CE9E9C972B5B1CE900C192D1 /* Drug */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		CE9E9C8E2B5B1CE900C192D1 /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				CE9E9C8F2B5B1CE900C192D1 /* ViewModel */,
+				CE9E9C912B5B1CE900C192D1 /* Model */,
+				CE9E9C932B5B1CE900C192D1 /* View */,
+			);
+			path = Catalog;
+			sourceTree = "<group>";
+		};
+		CE9E9C8F2B5B1CE900C192D1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE9E9C902B5B1CE900C192D1 /* CatalogViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE9E9C912B5B1CE900C192D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE9E9C922B5B1CE900C192D1 /* DrugModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE9E9C932B5B1CE900C192D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE9E9C942B5B1CE900C192D1 /* Cell */,
+				CE9E9C962B5B1CE900C192D1 /* CatalogViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE9E9C942B5B1CE900C192D1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CE9E9C952B5B1CE900C192D1 /* CatalogCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CE9E9C972B5B1CE900C192D1 /* Drug */ = {
+			isa = PBXGroup;
+			children = (
+				CE9E9C982B5B1CE900C192D1 /* ViewModel */,
+				CE9E9C9A2B5B1CE900C192D1 /* View */,
+			);
+			path = Drug;
+			sourceTree = "<group>";
+		};
+		CE9E9C982B5B1CE900C192D1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE9E9C992B5B1CE900C192D1 /* DrugViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE9E9C9A2B5B1CE900C192D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE9E9C9B2B5B1CE900C192D1 /* DrugViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE9E9CA52B5B1D4E00C192D1 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				CE9E9CA62B5B1D4E00C192D1 /* DateFormatters+Presets.swift */,
+				CE9E9CA72B5B1D4E00C192D1 /* CellsReusingUtils.swift */,
+				CE9E9CA82B5B1D4E00C192D1 /* NetworkClient */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		CE9E9CA82B5B1D4E00C192D1 /* NetworkClient */ = {
+			isa = PBXGroup;
+			children = (
+				CE9E9CA92B5B1D4E00C192D1 /* NetworkClient.swift */,
+				CE9E9CAA2B5B1D4E00C192D1 /* NetworkTask.swift */,
+				CE9E9CAB2B5B1D4E00C192D1 /* NetworkRequest.swift */,
+			);
+			path = NetworkClient;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE9E9C3C2B5808AF00C192D1 /* DrugStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE9E9C512B5808B100C192D1 /* Build configuration list for PBXNativeTarget "DrugStore" */;
+			buildPhases = (
+				CE9E9C392B5808AF00C192D1 /* Sources */,
+				CE9E9C3A2B5808AF00C192D1 /* Frameworks */,
+				CE9E9C3B2B5808AF00C192D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrugStore;
+			packageProductDependencies = (
+				CE9E9CA32B5B1D0700C192D1 /* Kingfisher */,
+			);
+			productName = DrugStore;
+			productReference = CE9E9C3D2B5808AF00C192D1 /* DrugStore.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE9E9C352B5808AF00C192D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					CE9E9C3C2B5808AF00C192D1 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = CE9E9C382B5808AF00C192D1 /* Build configuration list for PBXProject "DrugStore" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE9E9C342B5808AF00C192D1;
+			packageReferences = (
+				CE9E9CA22B5B1D0700C192D1 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = CE9E9C3E2B5808AF00C192D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE9E9C3C2B5808AF00C192D1 /* DrugStore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE9E9C3B2B5808AF00C192D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9E9C4D2B5808B100C192D1 /* LaunchScreen.storyboard in Resources */,
+				CE9E9C4A2B5808B100C192D1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE9E9C392B5808AF00C192D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9E9C8A2B5B1C9D00C192D1 /* TabBarViewController.swift in Sources */,
+				CE9E9C9F2B5B1CE900C192D1 /* CatalogViewController.swift in Sources */,
+				CE9E9C9D2B5B1CE900C192D1 /* DrugModel.swift in Sources */,
+				CE9E9C412B5808AF00C192D1 /* AppDelegate.swift in Sources */,
+				CE9E9CAE2B5B1D4E00C192D1 /* NetworkClient.swift in Sources */,
+				CE9E9CA12B5B1CE900C192D1 /* DrugViewController.swift in Sources */,
+				CE9E9CAF2B5B1D4E00C192D1 /* NetworkTask.swift in Sources */,
+				CE9E9C9E2B5B1CE900C192D1 /* CatalogCollectionViewCell.swift in Sources */,
+				CE9E9CAD2B5B1D4E00C192D1 /* CellsReusingUtils.swift in Sources */,
+				CE9E9C432B5808AF00C192D1 /* SceneDelegate.swift in Sources */,
+				CE9E9C8C2B5B1CBD00C192D1 /* NetworkService.swift in Sources */,
+				CE9E9C882B5B1C7100C192D1 /* Extension Colors.swift in Sources */,
+				CE9E9C862B5B1C7100C192D1 /* Extansion UIApplication.swift in Sources */,
+				CE9E9CB02B5B1D4E00C192D1 /* NetworkRequest.swift in Sources */,
+				CE9E9CA02B5B1CE900C192D1 /* DrugViewModel.swift in Sources */,
+				CE9E9C872B5B1C7100C192D1 /* Observable.swift in Sources */,
+				CE9E9CAC2B5B1D4E00C192D1 /* DateFormatters+Presets.swift in Sources */,
+				CE9E9C9C2B5B1CE900C192D1 /* CatalogViewModel.swift in Sources */,
+				CE9E9C852B5B1C7100C192D1 /* Extansion View.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE9E9C4B2B5808B100C192D1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE9E9C4C2B5808B100C192D1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE9E9C4F2B5808B100C192D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE9E9C502B5808B100C192D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE9E9C522B5808B100C192D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C4L53C7A94;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DrugStore/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = udachi.tomo.DrugStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE9E9C532B5808B100C192D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C4L53C7A94;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DrugStore/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = udachi.tomo.DrugStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE9E9C382B5808AF00C192D1 /* Build configuration list for PBXProject "DrugStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9E9C4F2B5808B100C192D1 /* Debug */,
+				CE9E9C502B5808B100C192D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE9E9C512B5808B100C192D1 /* Build configuration list for PBXNativeTarget "DrugStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9E9C522B5808B100C192D1 /* Debug */,
+				CE9E9C532B5808B100C192D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE9E9CA22B5B1D0700C192D1 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE9E9CA32B5B1D0700C192D1 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE9E9CA22B5B1D0700C192D1 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CE9E9C352B5808AF00C192D1 /* Project object */;
+}
